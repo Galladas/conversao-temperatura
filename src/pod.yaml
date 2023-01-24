@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meuprimeiropod
+spec:
+  containers:
+  - name: site
+    image: galladas/conversao-temperatura:v1
+    ports:
+    - containerPort: 8080
